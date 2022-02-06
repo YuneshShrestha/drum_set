@@ -38,7 +38,7 @@ function animateButton(key){
     var button = document.querySelector("."+key);
     button.classList.add("pressed");
     setTimeout(function(){
-        button.remove("pressed");
+        button.classList.remove("pressed");
       },100);
 }
 var i = document.getElementsByClassName("drum").length;
